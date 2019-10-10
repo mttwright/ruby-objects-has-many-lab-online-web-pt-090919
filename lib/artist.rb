@@ -10,12 +10,11 @@ class Artist
   end
   
   def songs
-    Songs.all.collection_select
+    Songs.all.collect do |song|
+      song.name if song.artist == self.name
+    end
   end
   
-  def add_song(song)
-    @songs.push(song)
-  end
     
   
   
