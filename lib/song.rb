@@ -10,11 +10,6 @@ class Song
     @@all.push(self)
   end
   
-  def artist=(artist)
-    @artist = artist
-    artist.songs.push(self)
-    binding.pry
-  end
     
   
   def self.all
