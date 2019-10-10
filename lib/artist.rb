@@ -6,9 +6,7 @@ class Artist
   
   def initialize(name)
     @name = name
-    @songs = Song.all.collect do |song|
-      song.artist == self.name
-    end
+    @songs = []
   end
   
   def songs
