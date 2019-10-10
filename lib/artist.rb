@@ -20,7 +20,7 @@ class Artist
     @songs.push(song)
   end
   
-  def add_song_by_name
+  def add_song_by_name(name)
     
   
   
