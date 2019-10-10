@@ -10,7 +10,7 @@ class Artist
   end
   
   def songs
-    Songs.all.collect do |song|
+    Song.all.collect do |song|
       song.name if song.artist == self.name
     end
   end
