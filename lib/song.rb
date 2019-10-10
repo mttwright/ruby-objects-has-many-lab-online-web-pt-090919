@@ -12,6 +12,7 @@ class Song
   
   def artist=(artist)
     @artist = artist
+    artist.
     
   
   def self.all
