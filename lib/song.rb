@@ -14,10 +14,6 @@ class Song
     @@all
   end
   
-  def artist_name
-    binding.pry
-    self.artist.name
-  end
   
   
   
