@@ -7,7 +7,8 @@ class Artist
   def initialize(name)
     @name = name
     @songs = Song.all.collect do |song|
-      song.
+      song.artist == self.name
+    end
   end
   
   def songs
