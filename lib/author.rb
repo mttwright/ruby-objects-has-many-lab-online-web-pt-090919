@@ -7,12 +7,12 @@ class Author
   end
   
   def posts
-    Post.all.collect do |post|
-      post if post.author.name == self.name
+    Post.all.collect do |posts|
+      posts if posts.author.name == self.name
     end
   end
   
-  def add_post(post)
+  def add_post(posts)
   end
   
 end
