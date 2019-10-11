@@ -7,6 +7,8 @@ class Author
   end
   
   def posts
+    Post.all.collect do |post|
+      post.author
   end
   
 end
